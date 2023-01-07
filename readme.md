@@ -63,7 +63,7 @@ You can use custom properties to change the form’s styles. You can add those p
 
 It is possible to make this form works in case JavaScript fails to load. Keep in mind there is no known alternative to manage success or error messages because this endpoint doesn’t manage redirects for those cases.
 
-To cover those cases, you can add the form inside the `<substack-form` custom element as follow:
+To cover those cases, you can add the form inside the `<substack-form>` custom element as follow:
 
 ```html
 <substack-form
