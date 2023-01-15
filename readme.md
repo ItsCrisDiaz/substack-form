@@ -85,13 +85,11 @@ To cover those cases, you can add the form inside the `<substack-form>` custom e
       name="email"
       required
     />
-    <label for="newsletterDomain" hidden>Domain:</label>
     <input
-      type="text"
+      type="hidden"
       id="newsletterDomain"
       name="domain"
       value="example.substack.com/"
-      hidden
     />
     <button class="submit" type="submit">Suscribe</button>
   </form>
@@ -99,5 +97,5 @@ To cover those cases, you can add the form inside the `<substack-form>` custom e
 ```
 
 - The attributes `action` and `method` of this form are required to send the information to the API. **Don’t change them**
-- The `email` and `domain` inputs are required to have the `name` attributes as you can notice in this code snippet.
-- The only value you need to modify is the attribute `value` in the `input` with the name `domain` with your Substack’s newsletter domain. This input is hidden to all users by using the attribute `hidden`.
+- The `email` and `domain` inputs are required to have the `name` attributes as shown in the example you can notice in this code snippet.
+- The only value you need to modify is the attribute `value` in the `input` with the attribute `type="hidden"`. This type is necessary to hide it visually and from screen readers but still being able to send the information to Substack.
